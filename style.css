@@ -54,7 +54,7 @@ body {
   margin-bottom: 126px;
 }
 
-.catalog_nav {
+.catalog__nav {
   display: flex;
   justify-content: space-between;
   margin-bottom: 9px;
@@ -86,13 +86,9 @@ body {
   padding-left: 14px;
   padding-right: 22px;
   background: none;
-  /* убираем фон */
   -webkit-appearance: none;
-  /* Chrome */
   -moz-appearance: none;
-  /* Firefox */
   appearance: none;
-  /* убираем дефолнтные стрелочки */
   color: #000;
   font-family: Montserrat;
   font-size: 16px;
@@ -160,6 +156,7 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   box-sizing: border-box;
+  font-family: Montserrat;
 }
 
 .header__input::-moz-placeholder {
@@ -171,7 +168,8 @@ body {
 }
 
 .header {
-  height: 76px;
+  padding-top: 16px;
+  padding-bottom: 16px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -283,7 +281,7 @@ body {
 }
 
 .product__box {
-  padding-top: 64px;
+  padding-top: 57px;
 }
 
 .product__content {
@@ -295,7 +293,7 @@ body {
   flex-wrap: wrap;
 }
 .product__content_catalog {
-  row-gap: 49px;
+  row-gap: 56px;
 }
 
 .product__heading {
@@ -338,12 +336,11 @@ body {
 }
 
 .box__link {
-  height: 58px;
-  padding-top: 39px;
-  padding-bottom: 33px;
+  padding-top: 23px;
+  padding-bottom: 64px;
 }
 
-.link_go {
+.link-go {
   color: #000;
   font-style: normal;
   font-weight: 400;
@@ -351,7 +348,7 @@ body {
   text-decoration-line: underline;
   font-size: 16px;
 }
-.link_go:hover {
+.link-go:hover {
   color: #888888;
   text-decoration: none;
 }
@@ -398,7 +395,7 @@ body {
   flex-wrap: wrap;
 }
 
-.footer_info {
+.footer__info {
   display: flex;
   gap: 129px;
 }
@@ -484,7 +481,6 @@ body {
   font-family: "Montserrat", sans-serif;
   line-height: 18px;
   color: #000000;
-  margin-top: 12px;
   transition: all 1s;
 }
 .form__button:hover {
@@ -531,6 +527,13 @@ body {
   justify-content: space-between;
   padding-bottom: 14px;
 }
+.cart__name-box_text {
+  color: #000;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .cart__item {
   border-top: 0.5px solid #CACDD8;
   padding-top: 25px;
@@ -545,21 +548,21 @@ body {
   flex-direction: column;
   gap: 14px;
 }
-.cart__info_heading {
+.cart__name {
   color: #000;
   font-size: 24px;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
 }
-.cart__info_text {
+.cart__text {
   color: #888;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
 }
-.cart__info_price {
+.cart_price {
   color: #050505;
   font-size: 16px;
   font-style: normal;
@@ -596,13 +599,13 @@ body {
   height: 556px;
   grid-column: span 4;
 }
-.cart__form_box {
+.cart__form-box {
   padding-top: 35px;
   display: flex;
   flex-direction: column;
   gap: 41px;
 }
-.cart__form__heading {
+.cart__form-heading {
   color: #000;
   text-align: center;
   font-size: 24px;
@@ -610,7 +613,7 @@ body {
   font-weight: 600;
   line-height: normal;
 }
-.cart__form_text {
+.cart__form-text {
   outline: none;
   padding-bottom: 3px;
   font-family: Montserrat;
@@ -623,13 +626,13 @@ body {
   border-bottom: 0.5px solid #CACDD8;
   background: transparent;
 }
-.cart__form_text::-moz-placeholder {
+.cart__form-text::-moz-placeholder {
   color: #000;
 }
-.cart__form_text::placeholder {
+.cart__form-text::placeholder {
   color: #000;
 }
-.cart__form_price {
+.cart__form-price {
   margin-top: 64px;
   margin-bottom: 18px;
   color: #000;
@@ -639,7 +642,7 @@ body {
   line-height: normal;
   text-align: center;
 }
-.cart__form_price_total {
+.cart__form-price_total {
   color: #000;
   text-align: center;
   font-size: 24px;
